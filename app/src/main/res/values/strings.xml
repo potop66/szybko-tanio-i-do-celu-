@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">"Szybko tanio i do celu "</string>
+    <string name="settings">settings</string>
 </resources>
