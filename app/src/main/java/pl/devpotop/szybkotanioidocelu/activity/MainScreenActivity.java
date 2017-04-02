@@ -1,7 +1,6 @@
-package pl.devpotop.szybkotanioidocelu;
+package pl.devpotop.szybkotanioidocelu.activity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +9,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class MainScreenActivity extends AppCompatActivity implements MainScreenFragment.ButtonsClicked,MapsFragment.OnAddressPicked{
+import pl.devpotop.szybkotanioidocelu.fragments.MainScreenFragment;
+import pl.devpotop.szybkotanioidocelu.fragments.MapsFragment;
+import pl.devpotop.szybkotanioidocelu.R;
+import pl.devpotop.szybkotanioidocelu.fragments.SettingsFragment;
+
+public class MainScreenActivity extends AppCompatActivity implements MainScreenFragment.ButtonsClicked,MapsFragment.OnAddressPicked {
     Context context=this;
     FragmentManager fragmentManager;
 
@@ -24,7 +28,6 @@ public class MainScreenActivity extends AppCompatActivity implements MainScreenF
         transaction=fragmentManager.beginTransaction();
         MainScreenFragment fragment=new MainScreenFragment();
         transaction.replace(R.id.fragment_frame,fragment);
-        transaction.addToBackStack(null);
         transaction.commit();
     }
 
@@ -65,6 +68,12 @@ public class MainScreenActivity extends AppCompatActivity implements MainScreenF
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:
+                FragmentTransaction transaction;
+                transaction=fragmentManager.beginTransaction();
+              SettingsFragment fragment=new SettingsFragment();
+                transaction.replace(R.id.fragment_frame,fragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
 
 
 

@@ -1,4 +1,4 @@
-package pl.devpotop.szybkotanioidocelu;
+package pl.devpotop.szybkotanioidocelu.fragments;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import pl.devpotop.szybkotanioidocelu.R;
 
 
 public class MainScreenFragment extends Fragment {

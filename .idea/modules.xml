@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Szybkotanioidocelu.iml" filepath="$PROJECT_DIR$/Szybkotanioidocelu.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/osmbonuspack_v6.3/osmbonuspack_v6.3.iml" filepath="$PROJECT_DIR$/osmbonuspack_v6.3/osmbonuspack_v6.3.iml" />
     </modules>
   </component>
 </project>
